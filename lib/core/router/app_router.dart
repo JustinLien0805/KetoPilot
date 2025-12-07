@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart';
 
+import '../../features/analytics/presentation/pages/analytics_page.dart';
 import '../../features/dashboard/presentation/pages/dashboard_page.dart';
 import '../../features/data_entry/presentation/pages/data_entry_page.dart';
 import '../../features/food_diary/presentation/pages/food_diary_page.dart';
@@ -25,6 +25,8 @@ class AppRouter extends _$AppRouter {
     AutoRoute(page: FoodDiaryRoute.page, path: '/food-diary'),
 
     AutoRoute(page: HealthLoggingRoute.page, path: '/health-logging'),
+
+    AutoRoute(page: AnalyticsRoute.page, path: '/analytics'),
 
     AutoRoute(page: SettingsRoute.page, path: '/settings'),
   ];
